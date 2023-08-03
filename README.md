@@ -7,9 +7,13 @@ Rossmann operates over 3,000 drug stores in 7 European countries. We are tasked 
 
 # Files
 We are provided with historical sales data for 1,115 Rossmann stores. 
+
 •	train.csv - historical data including Sales
+
 •	test.csv - historical data excluding Sales
+
 •	sample_submission.csv - a sample submission file in the correct format
+
 •	store.csv - supplemental information about the stores
 
 # Approach
