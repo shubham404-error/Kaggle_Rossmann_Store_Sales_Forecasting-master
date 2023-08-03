@@ -1,9 +1,4 @@
-# Kaggle_Rossmann_Store_Sales_Forecasting
-
-![alt text](https://github.com/bisman16/Kaggle_Rossmann_Store_Sales_Forecasting/blob/master/rossmann.png)
-
-# Motivation 
-I was always fascinated to know how retail stores and distributors make predictions for the inventory they need to keep at each of their store. Recently, I got to know that there are sophisticated predictive models available that take into consideration seasonality and trends. So, when I got an opportunity to do a Capstone project as part of my Udacity Data Scientist Nano degree, I thought of exploring a famous retail store time series data set available on Kaggle.
+# Store_Sales_Forecasting
 
 # Overview
 One of the most important tasks for any retail store company is to analyze the performance of its stores. The main challenge faced by any retail store is predicting in advance the sales and inventory required at each store to avoid over-stocking and under-stocking. This helps the business to provide the best customer experience and avoid getting into losses, thus ensuring the store is sustainable for operation.
@@ -18,7 +13,7 @@ We are provided with historical sales data for 1,115 Rossmann stores.
 •	store.csv - supplemental information about the stores
 
 # Approach
-We’ll start by exploring the data set followed by dealing with missing values and doing some feature engineering. Then, we’ll build some predictive models to predict the sales using time series forecasting models such as ARIMA, Prophet and XGBoost.
+We’ll start by exploring the data set followed by dealing with missing values and doing some feature engineering. Then, we’ll build some predictive models to predict the sales using time series forecasting models such as ARIMA and Prophet.
 
 # Evaluation Metrics
 There are two popular metrics used in measuring the performance of regression (continuous variable) models i.e MAE & RMSE.
@@ -31,18 +26,15 @@ MAE is easier to understand and interpret but RMSE works well in situations wher
 So, we’ll choose RMSE as a metric to measure the performance of our models.
 
 # Libraries Used
-Numpy, pandas, seaborn, statsmodels, ARIMA, Prophet, XGBoost, sklearn
+Numpy, pandas, seaborn, statsmodels, ARIMA, Prophet, sklearn
 
 # Results
 We will use the Root Mean Squared Error (RMSE) to evaluate and validate the performance of various models. 
 
-
-![alt text](https://github.com/bisman16/Kaggle_Rossmann_Store_Sales_Forecasting/blob/master/model_comparison.JPG)
-
 # Model Comparison & Selection
-a) We can see from the above table that SARIMA performs the best followed by XGBoost and Prophet.
+a) We can see from the above table that SARIMA performs the best followed by Prophet.
 
-b) It makes sense because SARIMA is designed specifically for seasonal time series data while XGBoost is a general (though powerful) machine learning approach with various applications.
+b) It makes sense because SARIMA is designed specifically for seasonal time series data.
 
 c) Prophet is a good choice for producing quick forecasts as it doesn’t require strong technical skills. It is easy to implement at scale. The reason for its poor performance here is probably because of a lack of data. It works best with time series that have strong seasonal effects and several seasons of historical data. Prophet is robust to missing data and shifts in the trend, and typically handles outliers well.
 
@@ -63,11 +55,5 @@ https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python
 
 https://www.digitalocean.com/community/tutorials/a-guide-to-time-series-forecasting-with-arima-in-python-3
 
-https://xgboost.readthedocs.io/en/latest/python/python_intro.html
-
-https://www.datacamp.com/community/tutorials/xgboost-in-python
-
 https://facebook.github.io/prophet/docs/quick_start.html
 
-# Blog
-You can also check out my blog - https://medium.com/@bismanpreetsingh/predicting-sales-time-series-analysis-forecasting-with-python-b81d3e8ff03f
